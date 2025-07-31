@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "ltn",
+      "camelcase": "LTN",
+      "title": "Lua Table Notation",
+      "scope": "source.ltn",
+      "file-types": [
+        "ltn"
+      ],
+      "injection-regex": "^ltn$",
+      "class-name": "TreeSitterLtn"
+    }
+  ],
+  "metadata": {
+    "version": "0.0.0",
+    "license": "BSD 2",
+    "description": "A JSON, YAML and TOML alternative based on Lua's Tables.",
+    "authors": [
+      {
+        "name": "DylanDoesProgramming664",
+        "email": "dylan20xx@outlook.com",
+        "url": "https://github.com/DylanDoesProgramming664"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/DylanDoesProgramming664/tree-sitter-ltn"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
