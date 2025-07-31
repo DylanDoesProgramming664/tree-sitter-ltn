@@ -1,9 +1,9 @@
 {
   "name": "tree-sitter-ltn",
-  "version": "0.0.0",
-  "description": "A JSON, YAML and TOML alternative based on Lua's Tables.",
-  "repository": "https://github.com/tree-sitter/tree-sitter-ltn",
-  "license": "BSD 2",
+  "version": "0.0.1",
+  "description": "A JSON, YAML and TOML alternative based on Lua Tables.",
+  "repository": "https://github.com/dylandoesprogramming664/tree-sitter-ltn",
+  "license": "BSD2",
   "author": {
     "name": "DylanDoesProgramming664",
     "email": "dylan20xx@outlook.com",

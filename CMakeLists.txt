@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.13)
 
 project(tree-sitter-ltn
-        VERSION "0.0.0"
-        DESCRIPTION "A JSON, YAML and TOML alternative based on Lua's Tables."
-        HOMEPAGE_URL "https://github.com/tree-sitter/tree-sitter-ltn"
+        VERSION "0.0.1"
+        DESCRIPTION "A JSON, YAML and TOML alternative based on Lua Tables."
+        HOMEPAGE_URL "https://github.com/dylandoesprogramming664/tree-sitter-ltn"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)

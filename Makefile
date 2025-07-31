@@ -3,8 +3,8 @@ $(error Windows is not supported)
 endif
 
 LANGUAGE_NAME := tree-sitter-ltn
-HOMEPAGE_URL := https://github.com/tree-sitter/tree-sitter-ltn
-VERSION := 0.0.0
+HOMEPAGE_URL := https://github.com/dylandoesprogramming664/tree-sitter-ltn
+VERSION := 0.0.1
 
 # repository
 SRC_DIR := src

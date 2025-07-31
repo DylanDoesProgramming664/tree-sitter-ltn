@@ -1,4 +1,4 @@
-"""A JSON, YAML and TOML alternative based on Lua's Tables."""
+"""A JSON, YAML and TOML alternative based on Lua Tables."""
 
 from importlib.resources import files as _files
 

@@ -14,9 +14,9 @@
     }
   ],
   "metadata": {
-    "version": "0.0.0",
-    "license": "BSD 2",
-    "description": "A JSON, YAML and TOML alternative based on Lua's Tables.",
+    "version": "0.0.1",
+    "license": "BSD2",
+    "description": "A JSON, YAML and TOML alternative based on Lua Tables.",
     "authors": [
       {
         "name": "DylanDoesProgramming664",
@@ -35,6 +35,6 @@
     "python": true,
     "rust": true,
     "swift": true,
-    "zig": false
+    "zig": true
   }
 }

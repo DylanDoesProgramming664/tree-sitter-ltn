@@ -1,7 +1,7 @@
 /**
- * @file A JSON, YAML and TOML alternative based on Lua's Tables.
+ * @file A JSON, YAML and TOML alternative based on Lua Tables.
  * @author DylanDoesProgramming664 <dylan20xx@outlook.com>
- * @license BSD 2
+ * @license BSD2
  */
 
 /// <reference types="tree-sitter-cli/dsl" />
