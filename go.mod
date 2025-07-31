@@ -1,4 +1,4 @@
-module github.com/DylanDoesProgramming664/tree-sitter-ltn
+module github.com/dylandoesprogramming664/tree-sitter-ltn
 
 go 1.22
 
