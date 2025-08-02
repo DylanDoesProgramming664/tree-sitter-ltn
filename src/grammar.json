@@ -23,15 +23,11 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "FIELD",
-                  "name": "name",
-                  "content": {
-                    "type": "SYMBOL",
-                    "name": "identifier"
-                  }
+                  "type": "SYMBOL",
+                  "name": "identifier"
                 },
                 {
-                  "type": "STRING",
+                  "type": "PATTERN",
                   "value": "="
                 }
               ]
@@ -46,16 +42,8 @@
           "name": "_value"
         },
         {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "STRING",
-              "value": ","
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
+          "type": "PATTERN",
+          "value": ","
         }
       ]
     },

@@ -71,24 +71,17 @@
   {
     "type": "statement",
     "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
+    "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
           "type": "_value",
+          "named": true
+        },
+        {
+          "type": "identifier",
           "named": true
         }
       ]
