@@ -9,11 +9,11 @@
         "type": "REPEAT",
         "content": {
           "type": "SYMBOL",
-          "name": "_statement"
+          "name": "statement"
         }
       }
     },
-    "_statement": {
+    "statement": {
       "type": "SEQ",
       "members": [
         {
@@ -696,7 +696,7 @@
       ]
     },
     "identifier": {
-      "type": "IMMEDIATE_TOKEN",
+      "type": "TOKEN",
       "content": {
         "type": "PREC",
         "value": 2,
@@ -739,10 +739,6 @@
     }
   },
   "extras": [
-    {
-      "type": "PATTERN",
-      "value": "[\\n]"
-    },
     {
       "type": "PATTERN",
       "value": "\\s"
