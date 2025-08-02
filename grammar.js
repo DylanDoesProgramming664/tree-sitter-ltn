@@ -46,6 +46,7 @@ module.exports = grammar({
         ),
       ),
       $._value,
+      optional(','),
     ),
 
     _value: $ => choice(
