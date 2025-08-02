@@ -56,7 +56,18 @@
     "type": "source_file",
     "named": true,
     "root": true,
-    "fields": {},
+    "fields": {
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
       "required": false,

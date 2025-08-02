@@ -36,9 +36,19 @@ module.exports = grammar({
   rules: {
     source_file: $ => prec(
       PREC.SOURCE,
-      repeat($._value),
+      repeat($._statement),
     ),
     
+    _statement: $ => seq(
+      optional(
+        seq(
+          field("name", $.identifier),
+          '=',
+        ),
+      ),
+      $._value,
+    ),
+
     _value: $ => choice(
       $.boolean,
       $.number,
@@ -89,9 +99,9 @@ module.exports = grammar({
       $.escape_sequence,
     )),
 
-    string_content: _ => token.immediate(prec(1, /[^\\"\n]+/)),
+    string_content: $ => token.immediate(prec(1, /[^\\"\n]+/)),
 
-    escape_sequence: _ => token.immediate(seq(
+    escape_sequence: $ => token.immediate(seq(
       '\\',
       /(b|f|n|r|t|\\|\"|\'|\[|\])/,
     )),
@@ -119,7 +129,7 @@ module.exports = grammar({
       field('value', $._value),
     ),
 
-    identifier: $ => token.immediate(prec(PREC.PRIORITY, /[a-zA-Z][a-zA-Z_0-9]+/)),
+    identifier: $ => token(prec(PREC.PRIORITY, /[a-zA-Z][a-zA-Z_0-9]+/)),
 
     comment: $ => seq(
       field("start", alias("--", "comment_start")),

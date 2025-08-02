@@ -9,9 +9,43 @@
         "type": "REPEAT",
         "content": {
           "type": "SYMBOL",
-          "name": "_value"
+          "name": "_statement"
         }
       }
+    },
+    "_statement": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "FIELD",
+                  "name": "name",
+                  "content": {
+                    "type": "SYMBOL",
+                    "name": "identifier"
+                  }
+                },
+                {
+                  "type": "STRING",
+                  "value": "="
+                }
+              ]
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_value"
+        }
+      ]
     },
     "_value": {
       "type": "CHOICE",
