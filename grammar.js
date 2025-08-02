@@ -20,7 +20,6 @@ module.exports = grammar({
   name: "ltn",
 
   extras: $ => [
-    /[\n]/,
     /\s/,
     $.comment,
   ],
@@ -36,10 +35,10 @@ module.exports = grammar({
   rules: {
     source_file: $ => prec(
       PREC.SOURCE,
-      repeat($._statement),
+      repeat($.statement),
     ),
     
-    _statement: $ => seq(
+    statement: $ => seq(
       optional(
         seq(
           field("name", $.identifier),
