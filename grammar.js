@@ -41,12 +41,12 @@ module.exports = grammar({
     statement: $ => seq(
       optional(
         seq(
-          field("name", $.identifier),
-          '=',
+          $.identifier,
+          /=/,
         ),
       ),
       $._value,
-      optional(','),
+      /,/,
     ),
 
     _value: $ => choice(
