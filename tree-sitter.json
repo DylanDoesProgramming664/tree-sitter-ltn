@@ -10,7 +10,8 @@
         "ltn"
       ],
       "injection-regex": "^ltn$",
-      "class-name": "TreeSitterLtn"
+      "class-name": "TreeSitterLtn",
+      "highlights": "queries/highlights.scm"
     }
   ],
   "metadata": {

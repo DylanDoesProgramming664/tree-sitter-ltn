@@ -1,30 +1,93 @@
 [
   {
-    "type": "_value",
+    "type": "array_table",
     "named": true,
-    "subtypes": [
-      {
-        "type": "boolean",
-        "named": true
-      },
-      {
-        "type": "number",
-        "named": true
-      },
-      {
-        "type": "string",
-        "named": true
-      },
-      {
-        "type": "table",
-        "named": true
-      }
-    ]
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "array_table",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "map_table",
+          "named": true
+        },
+        {
+          "type": "nil",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "boolean",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true,
+    "fields": {}
+  },
+  {
+    "type": "double",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "integer",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "map_table",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "pair",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "number",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "double",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "pair",
@@ -39,49 +102,70 @@
             "named": true
           }
         ]
-      },
-      "value": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_value",
-            "named": true
-          }
-        ]
       }
-    }
-  },
-  {
-    "type": "source_file",
-    "named": true,
-    "root": true,
-    "fields": {},
+    },
     "children": {
-      "multiple": true,
-      "required": false,
+      "multiple": false,
+      "required": true,
       "types": [
         {
-          "type": "statement",
+          "type": "array_table",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "map_table",
+          "named": true
+        },
+        {
+          "type": "nil",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "statement",
+    "type": "source",
     "named": true,
+    "root": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "_value",
+          "type": "array_table",
           "named": true
         },
         {
-          "type": "identifier",
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "map_table",
+          "named": true
+        },
+        {
+          "type": "nil",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         }
       ]
@@ -98,29 +182,6 @@
         {
           "type": "escape_sequence",
           "named": true
-        },
-        {
-          "type": "string_content",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "table",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "_value",
-          "named": true
-        },
-        {
-          "type": "pair",
-          "named": true
         }
       ]
     }
@@ -134,15 +195,11 @@
     "named": false
   },
   {
+    "type": "--",
+    "named": false
+  },
+  {
     "type": "=",
-    "named": false
-  },
-  {
-    "type": "comment_content",
-    "named": false
-  },
-  {
-    "type": "comment_start",
     "named": false
   },
   {
@@ -158,11 +215,7 @@
     "named": true
   },
   {
-    "type": "number",
-    "named": true
-  },
-  {
-    "type": "string_content",
+    "type": "nil",
     "named": true
   },
   {
